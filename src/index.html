@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 1rem 1.5rem 1rem 1.5rem;
+            }
+            .banner {
+                background-color: white;
+                height: 80px;
+            }
+            .banner img {
+                height: 80px;
+            }
+            .float {
+                clear: both;
+                float: right;
+                margin: 0 2rem 0 2rem;
+            }
+            .float img {
+                width: 250px;
+                border: 1px solid black;
+                padding: 3px;
+            }
+            .float img:hover {
+                opacity: 0.5;
+            }
+            h3 {
+                clear: both;
+                border-bottom: 0.125rem solid #c4c4c4;
+            }
+            h2 {
+                clear: both;
+                border-bottom: 0.3125rem solid #fdcc70;
+            }
+            p {
+                margin-block-start: 0.25rem;
+            }
+                
+        </style>
+
+        <title>Knitting Data Communities</title>
+    </head>
+
+    <body>
+        <h1>Knitting Data Communities</h2>
+        <p style="margin-bottom:3rem">
+The focus of this manifesto is a group of overlapping communities sharing data about the natural
+environment, although its aims, workflows and technologies will be held in common with other kinds of
+inclusive data communities. Our communities comprise amateur and citizen scientists, professional
+naturalists, academics, students, teachers, policymakers, Indigenous peoples and other kinds of
+stakeholders.
+        </p>
+        <h2>Themes</h2>
+        <h3 id="galiano">Going Where People Are</h3>
+        <div class="float">
+            <a href="https://imerss.github.io/maxwell/R-Markdown-Background-Rewoven.html"><img src="img/Maxwell.jpg"></a>
+        </div>
+We emphasise helping different communities working with data in formats they are comfortable with,
+with tools they are familiar with, even if these differ from professional norms in other communities.
+An example of this is the <a href="https://transitionsaltspring.com/maxwell-creek-watershed-project/">Maxwell Creek Watershed Project</a>
+project undertaken with <a href="https://transitionsaltspring.com/">Transition Salt Spring</a>
+which empowers naturalists with moderate technical skills to edit documents in simply structured
+<a href="https://rmarkdown.rstudio.com/">R Markdown</a> format, of which the web output is then rewoven into an
+interactive <a href="https://imerss.github.io/maxwell/R-Markdown-Background-Rewoven.html">scrollytelling interface</a>. These documents are hosted in 
+<a href="https://pages.github.com/">GitHub pages</a> where any member may easily update and republish their documents without needing to consult a technician.
+
+Other examples might involve fitting domain-specific interface extensions into widespread data tools such as Microsoft Excel or Google Sheets, and maintaining ecologies of communities cooperating on the basis of these. Other data science communities will centre on scripts written in Python, hold their data in Jupyter notebooks, SQL databases or in centralised communities such as <a href="https://www.inaturalist.org/">iNaturalist</a>.
+
+
+<h3>Working with the real, overlapping structure of communities</h3>
+        <div class="float">
+            <a href="https://wiki.fluidproject.org/display/fluid/Presentations?preview=/1707985/298516483/ICA_CCR_2022___Mesh_Cooperativism_Poster-2.pdf"><img src="img/myco.jpg"></a>
+        </div>
+
+<p>Colin Clark and Ethan Winn have recently written on <a href="https://wiki.fluidproject.org/display/fluid/Presentations?preview=/1707985/298516483/ICA_CCR_2022___Mesh_Cooperativism_Poster-2.pdf">Mesh Cooperativism - Toward Mycorrhizal (Infra)structure for the Cooperative
+Movement</a> (<a href="https://wiki.fluidproject.org/display/fluid/Presentations?preview=/1707985/298516482/ICA%20Research%202022%20Conference%20-%20Mesh%20Cooperativism.pdf">Slides</a>),
+making an analogy between the interpenetrating structure of fungal filaments (Mycorrhiza) connecting 
+communities in overlapping groups of a range of sizes, and the goals of a Mesh Cooperativism movement,
+seeking to empower emerging cooperative networks through a combination of shared infrastructure and
+interoperable practice.</p>
+
+<p>An example of this is the <a href="#dci">Data Communities for Inclusion</a> project described below. These structures are more widespread than are typically acknowledged in technical systems, which prefer to force data into centrally managed repositories such as <a href="https://www.gbif.org/">GBIF</a> and ontologies such as <a href="https://dwc.tdwg.org/">Darwin Core</a> in order to smooth interoperability.</p>
+
+        <div class="float">
+            <a href="https://tcher.tech/publications/NordiCHI2022_EntangledArtifacts.pdf"><img src="img/galiano-artifacts.jpg"></a>
+        </div>
+
+<p><a href="https://tcher.tech/publications/NordiCHI2022_EntangledArtifacts.pdf">Entangled Artifacts: The Meeting Between a Volunteer-run
+Citizen Science Project and a Biodiversity Data Platform</a> (Tchernavskij & Bødker, 2022) takes up this theme in the context of the ecology of artifacts and working practices centring on the interaction between iNaturalist, a large centralist platform, and Biodiversity Galiano, a volunteer-run citizen science initiative, and examines the design tensions which emerge around their patterns of employing common interactive objects.</p>
+
+
+<h3>Empowering Communities to Own Their Infrastructure</h3>
+        <div class="float">
+            <a href="https://ppig.org/files/2018-PPIG-29th-basman.pdf"><img src="img/revolution.jpg"></a>
+        </div>
+
+We help communities to navigate the space of complex, proprietary solutions with high installation
+and running costs, by weaving through them with simply structured data and easily redeployable, 
+often static packages. An example of this is the embedding of visualisations from the 
+<a href="https://imerss.github.io/imerss-bioinfo/">IMERSS portal</a> in infrastructures with varying technology, for example the WordPress blogs of <a href="https://biogaliano.org/spiders/">BioGaliano</a> and the Weebly sites of the <a href="http://valdes-island-conservancy.weebly.com/websites-of-interest.html">Valdes Island Conservancy</a>. By making minimal reliance on server structures and making as much use as possible of public infrastructure such as GitHub and Google WorkSpace products, we hope to ease mobility to many varied hosts such as the PHP-based <a href="http://mukurtu.org/">Mukurtu</a>, a highly successful platform for the hosting of knowledge held by Indigenous communities.
+
+         We have written about the different categories of ownership communities may wish to enjoy, and the barriers that stand in their way, in <a href="https://ppig.org/files/2018-PPIG-29th-basman.pdf">What Lies in the Path of the Revolution"</a> (Basman, Tchernavskij, 2018).
+
+        <div class="float">
+            <a href="https://malleable.systems/"><img src="img/malleable.jpg"></a>
+        </div>
+<p>Some technical aspects of ownable infrastructure are the focus of the <a href="">Malleable Systems Collective</a>, following the core principle that it should be as easy to change software as it is to use it.</p>
+
+
+        <h2>Communities we work with</h2>
+<h3>IMERSS</h3>
+        <div class="float">
+            <a href="https://imerss.github.io/imerss-bioinfo/Xetthecum.html"><img src="img/Xetthecum.jpg"></a>
+        </div>
+        <p>Through collaboration with the Institute for Multidisciplinary Ecological Research in the Salish Sea, we have produced an <a href="https://imerss.org/2019/01/01/ecocultural-mapping-pilot/">ecocultural mapping pilot</a>
+        incorporating data from Indigenous and non-Indigenous community members on cultural
+        values, written and spoken Hul'qumi'num names of regions and species, as well as ecological community boundaries exported
+        from the QGIS geographic information system, fused together into a single interactive system. 
+        <a href="https://www.youtube.com/watch?v=0v84S7DeORU&t=35s">Xetthecum</a> is a small area
+        on the southwest coast of Galiano Island, also known as Retreat Cove. 
+        A <a href="https://www.youtube.com/watch?v=0v84S7DeORU">YouTube video</a> presented by Dana Ayotte of the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> has been published about the <a href="https://imerss.github.io/imerss-bioinfo/Xetthecum.html">Ecocultural Mapping Tool</a> and was presented at the April 2022 
+        <a href="https://www.indigeverse.org/day-3-april-24th/session-2-indigenous-digital-collective-workshop-tasters">Indigeverse conference</a>.
+
+<h3 id="dci">Data Communities for Inclusion</h3>
+        <div class="float">
+            <a href="https://cifar.ca/ai/ai-and-society/cifar-solution-networks/data-communities-for-inclusion/"><img src="img/cifar-dci.jpg"></a>
+        </div>
+
+The <a href="https://cifar.ca/ai/ai-and-society/cifar-solution-networks/data-communities-for-inclusion/">
+Data Communities for Inclusion</a> project, focusing on the <a href="https://www.sewa.org/">Self-Employed Women's Association of India</a> is studying how
+digital technologies can be placed at the service of overlapping groups of self-organised women labourers, working in agriculture, handicrafts and services. Because of the lack of traditional hierarchical power and informational structures, and the lack of clear distinctions between the outsides and insides of groups, unique issues are raised around data ownership, responsibility and workflow.
+
+<h3>WeCount</h3>
+        <div class="float">
+            <a href="https://wecount.inclusivedesign.ca/views/pluralistic-data-infrastructure/"><img src="img/WeCount.jpg"></a>
+        </div>
+        
+The <a href="https://wecount.inclusivedesign.ca/">WeCount</a> project, an initiative of the IDRC, aims to create an inclusive data ecosystem by removing bias and exclusion in the data economy. A particular demonstration within WeCount of is of a <a href="https://wecount.inclusivedesign.ca/views/pluralistic-data-infrastructure/">pluralistic data infrastructure</a>, which can be framed within the principles of <a href="https://mitpress.mit.edu/books/data-feminism">data feminism</a> (D'Ignazio, Klein, 2020) which seeks to challenge differentials of power resulting from relationships within data communities. Within this framework, data collection itself is critiqued in <a href="https://policyreview.info/articles/analysis/what-we-do-data-performative-critique-data-collection">What we do with data: a performative critique of data 'collection'</a> (Benjamin, 2021). Benjamin notes that "Data collection can therefore be a site of oppression and violence, a site in need of refusal and resistance, as well as a site for building communities". Benjamin instead promotes the notion of data compilation as an alternative framing, relying on notions of grouping and curation, rather than making the assumption of consent through an extractive process. Under data compilation, the relationships entailed between communities are retained within the dataset through tracking of provenance, rather than being effaced through a collection process. A demonstration of such an architecture is presented on the <a href="https://wecount.inclusivedesign.ca/views/pluralistic-data-infrastructure/#implementation-and-demonstration">WeCount initiative site</a>.
+
+<h2>We Will Knit</h2>
+
+<ol>
+<li><b>Communities with diverging models for ownership of knowledge</b> - For example, some Indigenous knowledge holders will consider that certain knowledge should be restricted to certain community members, and may even have a model for reclaiming knowledge once it has been sufficiently used.</li>
+<li><b>Communities with diverging ontologies and practices surrounding data</b> - For example, curators of biological samples held in institions will have slow, long cycles for updating the knowledge relating them, and may prefer to continue referring them to the taxonomy in place when they were collected as opposed to the current professional consensus. Citizen scientists may prefer to use common names in their locale, whereas specialists in some taxonomic or geographical areas may have preferred taxonomies more recent than those in any global repository.
+<li><b>Communities with diverging timescales and focus of interest</b> - For example, the interests of academics and students can be cyclic, making it hard to bank and build on contributions over long periods, and gear them to more long-lived communities of interest</li>
+<li><b>Different notions of the role of data and its connections to the stories which surround it</b> - For example, </li>
+</ol>
+
+    </body>
+</html>

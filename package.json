@@ -1,0 +1,28 @@
+{
+    "name": "knitting-data-communities",
+    "version": "1.0.0",
+    "description": "A manifesto for a pluralistic data community, primarily focusing on data about the natural environment",
+    "scripts": {
+        "build": "build.js",
+        "buildEleventy": "eleventy",
+        "watch": "eleventy --watch",
+        "serve": "eleventy --serve",
+        "deploy": "gh-pages -d dist"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/amb26/knitting-data-communities.git"
+    },
+    "keywords": [],
+    "author": "",
+    "bugs": {
+        "url": "https://github.com/amb26/knitting-data-communities/issues"
+    },
+    "homepage": "https://github.com/amb26/knitting-data-communities#readme",
+    "devDependencies": {
+        "fs-extra": "10.0.1",
+        "@11ty/eleventy": "1.0.2",
+        "markdown-it": "13.0.1",
+        "markdown-it-attrs": "4.1.4"
+    }
+}
