@@ -46,7 +46,7 @@
     </head>
 
     <body>
-        <h1>Knitting Data Communities</h2>
+        <h1>Knitting Data Communities</h1>
         <p style="margin-bottom:3rem">
 The focus of this manifesto is a group of overlapping communities sharing data about the natural
 environment, although its aims, workflows and technologies will be held in common with other kinds of
@@ -68,16 +68,24 @@ stakeholders.
         <div class="float">
             <a href="https://imerss.github.io/maxwell/R-Markdown-Background-Rewoven.html"><img src="img/Maxwell.jpg"></a>
         </div>
-We emphasise helping different communities working with data in formats they are comfortable with,
+<p>We emphasise helping different communities working with data in formats they are comfortable with,
 with tools they are familiar with, even if these differ from professional norms in other communities.
 An example of this is the <a href="https://transitionsaltspring.com/maxwell-creek-watershed-project/">Maxwell Creek Watershed Project</a>
 project undertaken with <a href="https://transitionsaltspring.com/">Transition Salt Spring</a>
 which empowers naturalists with moderate technical skills to edit documents in simply structured
-<a href="https://rmarkdown.rstudio.com/">R Markdown</a> format, of which the web output is then rewoven into an
+<a href="https://rmarkdown.rstudio.com/">R Markdown</a> format, of which the web output emitted by the <a href="https://www.htmlwidgets.org/">R HTMLWidgets</a> system is then reknitted into an
 interactive <a href="https://imerss.github.io/maxwell/R-Markdown-Background-Rewoven.html">scrollytelling interface</a>. These documents are hosted in 
-<a href="https://pages.github.com/">GitHub pages</a> where any member may easily update and republish their documents without needing to consult a technician.
+<a href="https://pages.github.com/">GitHub pages</a> where any member may easily update and republish their documents without needing to consult a technician.</p>
 
-Other examples might involve fitting domain-specific interface extensions into widespread data tools such as Microsoft Excel or Google Sheets, and maintaining ecologies of communities cooperating on the basis of these. Other data science communities will centre on scripts written in Python, hold their data in Jupyter notebooks, SQL databases or in centralised communities such as <a href="https://www.inaturalist.org/">iNaturalist</a>.
+        <div class="float">
+            <a href="https://amytwiggerholroyd.com/Folk-Fashion"><img src="img/FolkFashion.jpg"></a>
+        </div>
+
+<p>This reknitting approach is consonant with the notion of <a href="https://amytwiggerholroyd.com/Reknit-Revolution">reknitting</a> as promoted by 
+<a href="https://amytwiggerholroyd.com/">Amy Twigger Holroyd</a> and others, described in chapter 5 of her book <a href="https://amytwiggerholroyd.com/Folk-Fashion">Folk Fashion</a>. In this approach, a "readymade" data pipeline, which meets many but not all of the needs of a community, is "unpicked" at the final stage, ready to be reknitted into a more interactive, domain-appropriate interface.
+</p>
+
+<p>Other examples of working with vernacular technologies might involve fitting domain-specific interface extensions into widespread data tools such as Microsoft Excel or Google Sheets, and maintaining ecologies of communities cooperating on the basis of these. Other data science communities will centre on scripts written in Python, hold their data in Jupyter notebooks, SQL databases or in centralised communities such as <a href="https://www.inaturalist.org/">iNaturalist</a>. In each case we try to exploit existing pathways for knitting together these communities as far as they can take us &ndash; perhaps needing to "unravel" or back up some pieces of surplus work that they do, in order to go the last mile to our communities.</p>
 
 
 <h3>Working with the real, overlapping structure of communities</h3>
@@ -99,7 +107,7 @@ interoperable practice.</p>
         </div>
 
 <p><a href="https://tcher.tech/publications/NordiCHI2022_EntangledArtifacts.pdf">Entangled Artifacts: The Meeting Between a Volunteer-run
-Citizen Science Project and a Biodiversity Data Platform</a> (Tchernavskij & Bødker, 2022) takes up this theme in the context of the ecology of artifacts and working practices centring on the interaction between iNaturalist, a large centralist platform, and Biodiversity Galiano, a volunteer-run citizen science initiative, and examines the design tensions which emerge around their patterns of employing common interactive objects towards sometimes conflicting goals. The authors appeal to the notion of <a href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1082&context=sjis">artful integrations</a>, due to Suchman (2002), to describe the contrivances that a, typically more peripheral, community puts together to deal with the artefacts produced by a more central community in order to put them to purposes which are locally useful.</p>
+Citizen Science Project and a Biodiversity Data Platform</a> (Tchernavskij &amp; Bødker, 2022) takes up this theme in the context of the ecology of artifacts and working practices centring on the interaction between iNaturalist, a large centralist platform, and Biodiversity Galiano, a volunteer-run citizen science initiative, and examines the design tensions which emerge around their patterns of employing common interactive objects towards sometimes conflicting goals. The authors appeal to the notion of <a href="https://aisel.aisnet.org/cgi/viewcontent.cgi?article=1082&context=sjis">artful integrations</a>, due to Suchman (2002), to describe the contrivances that a, typically more peripheral, community puts together to deal with the artefacts produced by a more central community in order to put them to purposes which are locally useful.</p>
 
 <h3>Empowering communities to own their infrastructure</h3>
         <div class="float">
@@ -132,6 +140,9 @@ often static packages. An example of this is the embedding of visualisations fro
         on the southwest coast of Galiano Island, also known as Retreat Cove. 
         A <a href="https://www.youtube.com/watch?v=0v84S7DeORU">YouTube video</a> presented by Dana Ayotte of the <a href="https://idrc.ocadu.ca/">Inclusive Design Research Centre</a> has been published about the <a href="https://imerss.github.io/imerss-bioinfo/Xetthecum.html">Ecocultural Mapping Tool</a> and was presented at the April 2022 
         <a href="https://www.indigeverse.org/day-3-april-24th/session-2-indigenous-digital-collective-workshop-tasters">Indigeverse conference</a>.
+        </p>
+        <p>In this case, the reknitting workflow takes the form of hitching a ride on the <a href="https://plugins.qgis.org/plugins/qgis2web/">qgis2web</a> plugin of the popular open source <a href="https://www.qgis.org/">QGIS</a> geographical information system, which automates a great
+        deal of the legwork of converting desktop-scale map data into formats and coordinate systems suitable to be displayed on the web. The plugin generates a basic <a href="https://leafletjs.com/">Leaflet</a> map application from which we discard most of the packaging, and reparse/reknit the core files into our interactive visualisation.</p>
 
 <h3 id="dci">Data Communities for Inclusion</h3>
         <div class="float">
@@ -147,6 +158,9 @@ Data Communities for Inclusion</a> project, sponsored by <a href="https://cifar.
         </div>
         
 The <a href="https://wecount.inclusivedesign.ca/">WeCount</a> project, an initiative of the <a href="https://idrc.ocadu.ca/">IDRC</a>, aims to create an inclusive data ecosystem by removing bias and exclusion in the data economy. Within WeCount is a demonstration of a <a href="https://wecount.inclusivedesign.ca/views/pluralistic-data-infrastructure/">pluralistic data infrastructure</a>, which can be framed within the principles of <a href="https://mitpress.mit.edu/books/data-feminism">data feminism</a> (D'Ignazio, Klein, 2020) which seeks to challenge differentials of power resulting from relationships within data communities. Within this framework, data collection itself is critiqued in <a href="https://policyreview.info/articles/analysis/what-we-do-data-performative-critique-data-collection">What we do with data: a performative critique of data 'collection'</a> (Benjamin, 2021). Benjamin notes that "Data collection can therefore be a site of oppression and violence, a site in need of refusal and resistance, as well as a site for building communities". Benjamin instead promotes the notion of data compilation as an alternative framing, relying on notions of grouping and curation, rather than making the assumption of consent through an extractive process. Under data compilation, the relationships entailed between communities are retained within the dataset through tracking of provenance, rather than being effaced through a collection process. A demonstration of such an architecture is presented on the <a href="https://wecount.inclusivedesign.ca/views/pluralistic-data-infrastructure/#implementation-and-demonstration">WeCount initiative site</a>.
+
+<h2>Thinking of Knitting?</h2>
+Get in touch at <a href="https://twitter.com/amb26ponder">amb26ponder</a> or <a href="https://github.com/continuing-creativity/knitting-data-communities/issues">file an issue</a> on this repository!
 
 
     </body>
